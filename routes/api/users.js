@@ -26,3 +26,5 @@ router.post(RouteNames.Register, (req, res, next) => {
     }).catch(next);
 
 });
+
+module.exports = router;

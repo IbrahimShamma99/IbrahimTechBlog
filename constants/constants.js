@@ -4,5 +4,7 @@ const RouteNames = {
     Login: 'login',
     AddArticle: '/article'
 };
-
-module.exports = { RouteNames };
+params = {
+    article: 'article'
+};
+module.exports = { RouteNames, params };

@@ -8,6 +8,7 @@ app.use(bodyParser.json());
 
 require('./models/User');
 require('./models/Article');
+app.use(require('./routes'));
 
 app.use(session({
     secret: 'IbrahimBlog',
@@ -15,3 +16,5 @@ app.use(session({
     resave: false,
     saveUninitialized: false
 }));
+
+module.exports = { app }

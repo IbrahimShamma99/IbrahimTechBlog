@@ -2,6 +2,7 @@ var router = require('express').Router();
 var mongoose = require('mongoose');
 var Article = mongoose.model('Article');
 var User = mongoose.model('User');
+var { RouteNames, params } = require('../../constants/constants');
 
 router.param(params.article,
     function(req, res, next, slug) {
@@ -16,7 +17,7 @@ router.param(params.article,
                 return next(); //MiddleWare
             }).catch(next);
     });
-router.get(Constants.ArticleRoutes.default, helper.optional, function(req, res, next) {
+router.get(RouteNames.AddArticle, function(req, res, next) {
     var query = {};
     var limit = 20;
     var offset = 0;
@@ -75,3 +76,5 @@ router.get(Constants.ArticleRoutes.default, helper.optional, function(req, res, 
         });
     }).catch(next);
 });
+
+module.exports = router;
