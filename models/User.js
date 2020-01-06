@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var crypto = require('crypto');
 var jwt = require('jsonwebtoken');
-
+var secret = require("../config/config.json").secret;
 /**
  * @username 
  * @email => User's email

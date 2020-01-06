@@ -1,0 +1,4 @@
+{
+    "LocalEnvDB": "mongodb://localhost/IbrahimBlog",
+    "secret": "remember?"
+}

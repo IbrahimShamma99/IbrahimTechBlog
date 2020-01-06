@@ -5,9 +5,13 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "next",
+        "dev": "node app.js",
         "build": "next build",
-        "start": "next start"
+        "start": "next start",
+        "test-server": "jest --watch"
+    },
+    "jest": {
+        "testEnvironment": "node"
     },
     "repository": {
         "type": "git",
@@ -17,12 +21,16 @@
     "license": "ISC",
     "homepage": "https://bitbucket.org/IbrahimShamma/ibrahimblog#readme",
     "dependencies": {
+        "chai": "^4.2.0",
+        "errorhandler": "^1.5.1",
         "express": "^4.17.1",
         "express-session": "^1.17.0",
+        "jest": "^24.9.0",
         "jsonwebtoken": "^8.5.1",
         "mongoose": "^5.8.4",
         "next": "^9.1.7",
         "react": "^16.12.0",
-        "react-dom": "^16.12.0"
+        "react-dom": "^16.12.0",
+        "supertest": "^4.0.2"
     }
 }
