@@ -26,6 +26,12 @@ var UserSchema = new mongoose.Schema({
         match: [/\S+@\S+\.\S+/, 'is invalid'],
         index: true,
     },
+    contacts: {
+        PhoneNumber: { required: false },
+        FacebookAccount: { required: false },
+        InstegramAccount: { required: false },
+        LinkedInAccount: { required: false },
+    },
     bio: String,
     image: String,
     hash: String,
