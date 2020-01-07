@@ -3,6 +3,11 @@ var router = require('express').Router();
 var User = mongoose.model('User');
 const { RouteNames } = require("../../constants/constants");
 
+router.get(RouteNames.Base, (req, res) => {
+    res.status(200).send('I am working')
+});
+
+//SECTION add user
 router.post(RouteNames.Register, (req, res, next) => {
     user = new User();
     const registerInfo = req.body.user;
