@@ -8,6 +8,7 @@ app.use(bodyParser.json());
 var errorhandler = require('errorhandler');
 var config = require("./config/config");
 var isProduction = process.env.NODE_ENV === 'production';
+//NOTE Import DB
 require('./models/User');
 require('./models/Article');
 app.use(require('./routes'));

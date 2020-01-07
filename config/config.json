@@ -1,4 +1,5 @@
 {
     "LocalEnvDB": "mongodb://localhost/IbrahimBlog",
-    "secret": "remember?"
+    "secret": "remember?",
+    "PORT": 3000
 }

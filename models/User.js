@@ -3,9 +3,11 @@ var crypto = require('crypto');
 var jwt = require('jsonwebtoken');
 var secret = require("../config/config.json").secret;
 /**
+ * SECTION DB schema
  * @username 
  * @email => User's email
- * @bio => biography of the User
+ * @age => User's age
+ * @bio => Biography of the User
  * @image => User's avatar
  * @hash , @salt => related to the password
  */
@@ -32,11 +34,13 @@ var UserSchema = new mongoose.Schema({
         InstegramAccount: { required: false },
         LinkedInAccount: { required: false },
     },
+    age: String,
     bio: String,
     image: String,
     hash: String,
     salt: String,
 }, { timestamps: true });
+
 
 UserSchema.methods.validPassword = function(password) {
     var hash = crypto
