@@ -1,4 +1,4 @@
-const { app } = require("./server");
+const app = require("./server");
 const PORT = require("./config/config.json").PORT;
 
 var server = app.listen(process.env.PORT || PORT, function() {

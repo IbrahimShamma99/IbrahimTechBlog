@@ -7,13 +7,16 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 var errorhandler = require('errorhandler');
 var config = require("./config/config");
+var cors = require("cors");
 var isProduction = process.env.NODE_ENV === 'production';
 //NOTE Import DB
 require('./models/User');
 require('./models/Article');
 app.use(require('./routes'));
-app.use(errorhandler());
 
+app.use(errorhandler());
+app.use(require('method-override')());
+app.use(cors());
 app.use(session({
     secret: 'IbrahimBlog',
     cookie: { maxAge: 60000 },
@@ -47,4 +50,17 @@ app.use(function(err, req, res, next) {
         }
     });
 });
-module.exports = { app };
+
+app.use(function(err, req, res, next) {
+    // if (err.status === undefined) {
+    //     err.status = 422;
+    // };
+    res.status(err.status || 500);
+    res.json({
+        'errors': {
+            message: err.message,
+            error: {}
+        }
+    });
+});
+module.exports = app;

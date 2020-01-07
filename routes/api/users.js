@@ -11,20 +11,23 @@ router.post(RouteNames.Register, (req, res, next) => {
         user.username = registerInfo.username;
         user.email = registerInfo.email;
         user.setPassword(registerInfo.password);
-
+        user.token = user.generateJWT();
     } catch (e) {
         res.status(422).send({ error: "there was an error while registering" });
     };
-
-    user.save().then(function() {
-        user = user.toAuthJSON();
-        return res.json({
-            email: user.email,
+    user.save(function(err) {
+        if (err) {
+            if (err.name === 'MongoError' && err.code === 11000) {
+                return res.status(422).send({ succes: false, message: 'User already exist!' });
+            }
+            return res.status(422).send(err);
+        }
+        res.json({
             username: user.username,
+            email: user.email,
             token: user.token
         });
-    }).catch(next);
-
+    });
 });
 
 module.exports = router;
