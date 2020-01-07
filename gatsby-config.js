@@ -4,7 +4,7 @@ module.exports = {
         author: `IBrahim Blogs`,
         description: `A starter blog demonstrating what Gatsby can do.`,
         social: {
-            twitter: '',
+            twitter: 'ibrahimbon5',
             facebook: '',
             github: '',
             linkedIn: ''
