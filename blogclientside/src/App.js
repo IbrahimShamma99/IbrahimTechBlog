@@ -7,20 +7,6 @@ class App extends React.Component {
     super(props);
     this.state = {apiResponse:""};
   };
-  // getData() {
-  //   // create a new XMLHttpRequest
-  //   var xhr = new XMLHttpRequest()
-
-  //   // get a callback when the server responds
-  //   xhr.addEventListener('load', () => {
-  //     // update the state of the component with the result here
-  //     console.log(xhr.responseText)
-  //   })    // open the request with the verb and the url
-  //   xhr.open('GET', 'http://localhost:9000/api/')
-  //   // send the request
-  //   xhr.send()
-  //   this.setState({apiResponse:xhr.response})
-  // };
   callAPI() {
     fetch("http://localhost:9000/api")
         .then(res => res.text())
