@@ -13,6 +13,11 @@ Larry Bird
 ---
 ![Larry Bird pic ](./bird.jpg)
 
+The 3 times NBA champion a guy who was ahead of everybody in terms of efficiency and 3-point shoot definitely is in the conversation and at least top 10 of all time.
+Larry Bird and magic johnson are considered the saviors of the basketball association .
+
+
+
 ---
 Shaquille O'Neal
 ---
