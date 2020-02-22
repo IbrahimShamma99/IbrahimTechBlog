@@ -39,3 +39,5 @@ node_modules
 helpful.txt
 
 .next
+
+.cache
