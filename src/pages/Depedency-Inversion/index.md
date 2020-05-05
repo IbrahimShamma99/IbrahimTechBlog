@@ -12,7 +12,6 @@ In the typical calling tree, main functions called high-level functions, which c
 
 #####But let's take a look at how the process flows
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/0e4euthw4h9p2vn5sz43.png)
 Let's say that the main function calls out high-level function,
 the middle-level function acts as an interface for F(), however, that the source code dependency (the inheritance relationship)
 between ML1 and the interface, I point in the opposite direction compared to the flow of control. 
@@ -24,7 +23,6 @@ No matter which module does the calling and which module is called, the software
 All about at least from the architect’s point of view.
 What can you do with that power? As an example, you can rearrange the source code dependencies of your system so that the database and the user interface (UI) depend on the business rules, rather than the other way around.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/80x0d4za8283quvimz0j.png)
 
 This means that the UI is the main function, the database and business logic can be plugins to the system's rules. It means that the source code of the business rules never mentions the UI or the database.
 And this will help in software fast delivery.
