@@ -3,7 +3,7 @@ title: Functional programming
 date: "2020-01-05T22:12:03.284Z"
 ---
 
-##### In many ways, the concepts of functional programming (often abbreviated FP) predate programming itself. This paradigm is strongly based on the lambda-calculus invented by Alonzo Church in the 1930s.
+### <b> <i> In many ways, the concepts of functional programming (often abbreviated FP) predate programming itself. This paradigm is strongly based on the lambda-calculus invented by Alonzo Church in the 1930s.
 ## Don’t let all the new buzzwords scare you away. It’s a lot easier than it sounds.
 A programming paradigm is a way of thinking when constructing software, other examples of programming paradigms include object-oriented programming and procedural programming.
 
@@ -259,7 +259,3 @@ Immutability is the most important concept of functional programming because, wi
 I recommend you to check this medium article out it has some in-depth Immutations details
 
 <a href="https://medium.com/javascript-scene/the-dao-of-immutability-9f91a70c88cd"> the-dao-of-immutability  </a>
-
-## Conclusion
-We discussed what is functional programming although FP is good for reducing code redundancy, improving modularity, helping us to solve complex problems and most importantly increases maintainability by 
-being able to test each functional component separately. 
