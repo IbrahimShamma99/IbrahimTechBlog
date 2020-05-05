@@ -3,7 +3,7 @@ module.exports = {
     title: 'Ibrahim personal blog',
     author: 'Ibrahim',
     description: 'Personal blog by Ibrahim.',
-    siteUrl: 'https://overreacted.io',
+    siteUrl: 'https://ibrahim-blog.iabushammah.now.sh/',
     social: {
       twitter: 'ibrahimbon5',
     },
@@ -80,7 +80,7 @@ module.exports = {
               return allMarkdownRemark.edges.map(edge => {
                 const siteUrl = site.siteMetadata.siteUrl;
                 const postText = `
-                <div style="margin-top=55px; font-style: italic;">(This is an article posted to my blog at overreacted.io. You can read it online by <a href="${siteUrl +
+                <div style="margin-top=55px; font-style: italic;">(This is an article posted to my blog at https://ibrahim-blog.iabushammah.now.sh/. You can read it online by <a href="${siteUrl +
                   edge.node.fields.slug}">clicking here</a>.)</div>
               `;
 
@@ -126,7 +126,8 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: "Dan Abramov's Overreacted Blog RSS Feed",
+            title:
+              'Ibrahim https://ibrahim-blog.iabushammah.now.sh/ Blog RSS Feed',
           },
         ],
       },
