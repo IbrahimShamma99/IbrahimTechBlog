@@ -37,16 +37,15 @@ class Footer extends React.Component {
           target="_blank"
           rel="noopener noreferrer"
         >
-          DEV
-          {" "}
+          DEV{' '}
         </a>
         &bull;{' '}
         <a
-        href="https://www.linkedin.com/in/ibrahim-abushamma/"
-        target="_blank"
-        rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/ibrahim-abushamma/"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-        linkedin
+          linkedin
         </a>
       </footer>
     );

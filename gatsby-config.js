@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Ibrahim Personal blog',
+    title: 'Ibrahim personal blog',
     author: 'Ibrahim',
-    description: 'Personal blog by Ibrahim. Writing code to change lives',
-    siteUrl: '',
+    description: 'Personal blog by Ibrahim.',
+    siteUrl: 'https://overreacted.io',
     social: {
       twitter: 'ibrahimbon5',
     },
@@ -85,6 +85,7 @@ module.exports = {
               `;
 
                 let html = edge.node.html;
+                // Hacky workaround for https://github.com/gaearon/overreacted.io/issues/65
                 html = html
                   .replace(/href="\//g, `href="${siteUrl}/`)
                   .replace(/src="\//g, `src="${siteUrl}/`)
@@ -125,7 +126,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: 'Ibrahim personal Blog RSS Feed',
+            title: "Dan Abramov's Overreacted Blog RSS Feed",
           },
         ],
       },
@@ -133,7 +134,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-ebook`,
       options: {
-        filename: 'Ibrahim',
+        filename: 'overreacted-ebook.epub',
         query: `
           {
             site {
@@ -164,7 +165,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `ibrahim`,
+        name: `Overreacted`,
         short_name: `Overreacted`,
         start_url: `/`,
         background_color: `#ffffff`,
