@@ -1,6 +1,7 @@
 ---
 title: Functional programming 
 date: "2020-01-05T22:12:03.284Z"
+spoiler: Practical guide for FP
 ---
 
 ### <b> <i> In many ways, the concepts of functional programming (often abbreviated FP) predate programming itself. This paradigm is strongly based on the lambda-calculus invented by Alonzo Church in the 1930s.
