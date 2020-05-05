@@ -1,6 +1,6 @@
 ---
 title: Dealing with files via MERN stack 
-date: "2020-01-05T22:12:03.284Z"
+date: "2020-03-05T22:12:03.284Z"
 ---
 
 ## This article meant to be written for everything you need to know about file upload MERN stack specifically. :rocket:
