@@ -6,7 +6,7 @@ date: "2019-07-05T22:12:03.284Z"
 Here we go 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Imagine what software development was like before a safe and convenient mechanism for polymorphism was available, it was manually handled via pointers in C and other old languages.
 
-## Dependency Inversion :purple_heart: :heart_eyes:
+## Dependency Inversion 
 In the typical calling tree, main functions called high-level functions, which called mid-level functions, which called low-level functions. In that calling tree, however, source code dependencies inexorably followed the flow of control.
 ####Sounds interesting?
 
