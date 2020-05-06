@@ -196,19 +196,23 @@ class BlogPostTemplate extends React.Component {
                 {formatPostDate(post.frontmatter.date, lang)}
                 {` • ${formatReadingTime(post.timeToRead)}`}
                 {<br />}
-                {post.frontmatter.tags
-                  ? post.frontmatter.tags.split(' ').map((tag, index) => {
-                      if (index === 1) {
-                        return <Tag theme={indieTheme}> {tag.concat(` `)}</Tag>;
-                      } else if (index === 2) {
-                        return (
-                          <Tag theme={brightTheme}>{tag.concat(` `)} </Tag>
-                        );
-                      } else {
-                        return <Tag> {tag.concat(` `)}</Tag>;
-                      }
-                    })
-                  : null}
+                <div>
+                  {post.frontmatter.tags
+                    ? post.frontmatter.tags.split(' ').map((tag, index) => {
+                        if (index === 1) {
+                          return (
+                            <Tag theme={indieTheme}> {tag.concat(` `)}</Tag>
+                          );
+                        } else if (index === 2) {
+                          return (
+                            <Tag theme={brightTheme}>{tag.concat(` `)} </Tag>
+                          );
+                        } else {
+                          return <Tag> {tag.concat(` `)}</Tag>;
+                        }
+                      })
+                    : null}
+                </div>
               </p>
               {translations.length > 0 && (
                 <Translations
