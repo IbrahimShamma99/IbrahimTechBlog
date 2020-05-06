@@ -66,6 +66,9 @@ class BlogIndexTemplate extends React.Component {
                 <p
                   dangerouslySetInnerHTML={{ __html: node.frontmatter.spoiler }}
                 />
+                {/**TODO
+                    <p dangerouslySetInnerHTML={{ __html: node.frontmatter.spoiler }}/>
+                   */}
               </article>
             );
           })}
