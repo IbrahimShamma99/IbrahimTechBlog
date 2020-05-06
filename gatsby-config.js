@@ -119,6 +119,7 @@ module.exports = {
                         title
                         date
                         spoiler
+                        tags
                       }
                     }
                   }
@@ -156,6 +157,7 @@ module.exports = {
                   frontmatter {
                     title
                     date
+                    tags
                   }
                 }
               }

@@ -17,8 +17,8 @@ import {
   replaceAnchorLinksByLanguage,
 } from '../utils/i18n';
 
-const GITHUB_USERNAME = 'gaearon';
-const GITHUB_REPO_NAME = 'overreacted.io';
+const GITHUB_USERNAME = 'ibrahimshamma99';
+const GITHUB_REPO_NAME = 'Ibrahim-Blog';
 const systemFont = `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif`;
@@ -94,6 +94,7 @@ class Translations extends React.Component {
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
+    console.log('post', post);
     const siteTitle = get(this.props, 'data.site.siteMetadata.title');
     let {
       previous,
@@ -164,6 +165,12 @@ class BlogPostTemplate extends React.Component {
               >
                 {formatPostDate(post.frontmatter.date, lang)}
                 {` • ${formatReadingTime(post.timeToRead)}`}
+                {<br />}
+                {post.frontmatter.tags
+                  ? post.frontmatter.tags
+                      .split(' ')
+                      .map(tag => <span> {tag.concat(` `)}</span>)
+                  : null}
               </p>
               {translations.length > 0 && (
                 <Translations
@@ -261,6 +268,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         spoiler
+        tags
       }
       fields {
         slug
