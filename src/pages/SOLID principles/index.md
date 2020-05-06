@@ -1,5 +1,5 @@
 ---
-title: The "SOLID" Principles in designing software🤓
+title: The "SOLID" Principles in designing software
 date: '2019-08-12'
 ---
 As with everything in life, using these principles mindlessly
