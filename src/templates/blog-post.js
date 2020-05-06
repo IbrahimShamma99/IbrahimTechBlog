@@ -16,12 +16,42 @@ import {
   loadFontsForCode,
   replaceAnchorLinksByLanguage,
 } from '../utils/i18n';
+import styled from 'styled-components';
 
 const GITHUB_USERNAME = 'ibrahimshamma99';
 const GITHUB_REPO_NAME = 'Ibrahim-Blog';
 const systemFont = `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif`;
+
+const Tag = styled.span`
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: bolder;
+  padding: 2px 5px 3px;
+  border-radius: 2px;
+  background: ${props => props.theme.main};
+  color: ${props => props.theme.secondary};
+  margin-left: 1px;
+  height: 30px;
+`;
+Tag.defaultProps = {
+  theme: {
+    main: '#FFA7C4',
+    secondary: '#000000',
+  },
+};
+
+const indieTheme = {
+  main: '#FFFF00',
+  secondary: '#000000',
+};
+
+const brightTheme = {
+  main: '#32CD32',
+  secondary: '#000000',
+};
 
 class Translations extends React.Component {
   render() {
@@ -167,9 +197,17 @@ class BlogPostTemplate extends React.Component {
                 {` • ${formatReadingTime(post.timeToRead)}`}
                 {<br />}
                 {post.frontmatter.tags
-                  ? post.frontmatter.tags
-                      .split(' ')
-                      .map(tag => <span> {tag.concat(` `)}</span>)
+                  ? post.frontmatter.tags.split(' ').map((tag, index) => {
+                      if (index === 1) {
+                        return <Tag theme={indieTheme}> {tag.concat(` `)}</Tag>;
+                      } else if (index === 2) {
+                        return (
+                          <Tag theme={brightTheme}>{tag.concat(` `)} </Tag>
+                        );
+                      } else {
+                        return <Tag> {tag.concat(` `)}</Tag>;
+                      }
+                    })
                   : null}
               </p>
               {translations.length > 0 && (

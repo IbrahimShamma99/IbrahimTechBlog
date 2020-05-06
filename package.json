@@ -37,6 +37,7 @@
     "react-dom": "^16.8.2",
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.13",
+    "styled-components": "^5.1.0",
     "typography": "^0.16.17",
     "typography-theme-wordpress-2016": "^0.15.10"
   },
