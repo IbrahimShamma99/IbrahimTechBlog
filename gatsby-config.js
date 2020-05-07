@@ -41,6 +41,7 @@ module.exports = {
             },
           },
           'gatsby-remark-copy-linked-files',
+          `babel-plugin-styled-components`,
           'gatsby-remark-smartypants',
           {
             resolve: 'gatsby-remark-external-links',

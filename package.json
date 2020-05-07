@@ -8,7 +8,6 @@
     "url": "https://github.com/gaearon/overreacted.io/issues"
   },
   "dependencies": {
-    "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.0.76",
     "gatsby-plugin-catch-links": "^2.0.9",
     "gatsby-plugin-ebook": "^1.0.2",
@@ -44,6 +43,7 @@
     "typography-theme-wordpress-2016": "^0.15.10"
   },
   "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.7",
     "eslint": "^4.19.1",
     "eslint-plugin-react": "^7.11.1",
     "gh-pages": "^1.2.0",
