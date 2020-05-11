@@ -9,6 +9,7 @@ import React from 'react';
 import SEO from '../components/SEO';
 import get from 'lodash/get';
 import { rhythm } from '../utils/typography';
+import TagComonenent from '../Styles/Tag';
 
 class BlogIndexTemplate extends React.Component {
   render() {
@@ -66,6 +67,13 @@ class BlogIndexTemplate extends React.Component {
                 <p
                   dangerouslySetInnerHTML={{ __html: node.frontmatter.spoiler }}
                 />
+                <p>
+                  {node.frontmatter.tags
+                    ? node.frontmatter.tags.split(' ').map((tag, index) => {
+                        return <TagComonenent index={index} tag={tag} />;
+                      })
+                    : null}
+                </p>
                 {/**TODO
                     <p dangerouslySetInnerHTML={{ __html: node.frontmatter.spoiler }}/>
                    */}

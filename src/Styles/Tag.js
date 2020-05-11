@@ -3,7 +3,7 @@ import React from 'react';
 
 const Tag = styled.span`
   display: inline-block;
-  border-radius: 4px;
+  border-radius: 6px;
   font-size: 13px;
   font-weight: bolder;
   font-family: Helvetica, Arial, sans-serif;
@@ -11,7 +11,7 @@ const Tag = styled.span`
   border-radius: 2px;
   background: ${props => props.theme.main};
   color: ${props => props.theme.secondary};
-  margin-left: 1px;
+  margin-left: 2px;
   height: 30px;
 `;
 Tag.defaultProps = {
