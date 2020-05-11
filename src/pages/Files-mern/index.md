@@ -4,14 +4,14 @@ date: "2020-03-05T22:12:03.284Z"
 tags: "ExpressJS MongoDB NodeJS React"
 ---
 
-## This article meant to be written for everything you need to know about file upload MERN stack specifically. :rocket:
+## This article meant to be written for everything you need to know about file upload MERN stack specifically.
 
-if you want to escape this article for the code you can find here :upside_down_face:	
-{% github https://github.com/IbrahimShamma99/file-upload %}
+if you want to escape this article for the code you can find here<br>
+<a href="https://github.com/IbrahimShamma99/file-upload">Source Code</a>
 
-# Let's get started :fire:<br/><br/>
+# Let's get started <br/><br/>
 
-## 1.Creating Server and Client instances :building_construction:<br/><br/>
+## 1.Creating Server and Client instances <br/><br/>
 
 I assume you have already installed npm, NodeJS & MongoDB, we need to create a react app.
 NOTE: remember to put your repos on an organized folder structure.
@@ -84,15 +84,15 @@ npm i mongoose
 npm i multer
 ```
 To make things clear about the dependencies we installed:
-* Express is the API library for nodeJS. :cowboy_hat_face:
-* Mongoose is a MongoDB object modeling tool aka nodeJS driver. :sunglasses:
-* Multer is a node.js middleware for handling multipart/form-data :scream:	
+* Express is the API library for nodeJS.
+* Mongoose is a MongoDB object modeling tool aka nodeJS driver. 
+* Multer is a node.js middleware for handling multipart/form-data 	
 
 Now we created the server and the client sides so move to the next point.
 <br/><br/>
 
-## 2.Write the code :computer:
-First, we will start with the client :unicorn: :top: code by heading to /src/App.js
+## 2.Write the code 
+First, we will start with the client code by heading to /src/App.js
 to write the following: 
 ```jsx
 // destination  /src/App.js
@@ -149,7 +149,7 @@ export default App;
 
 Here we created a form in which the user uploads the file and saves it in the app component state which after submitting will be transferred for the server-side.
 
-Now let head into the :back::end: side we start with the /server/model.js
+Now let head into the side we start with the /server/model.js
 ```jsx
 var mongoose = require('mongoose');
 
@@ -161,7 +161,7 @@ const fileSchema = new mongoose.Schema({
 mongoose.model("file",fileSchema);
 ```
 
-And this is how we built the user schema sounds easy right? :nerd_face:
+And this is how we built the user schema sounds easy right? 
 <br/><br/>
 Now let's build the server instance which will listen on port 5000 on /server/server.js
 
@@ -222,7 +222,7 @@ app.listen(PORT,()=>{
 ```
 Note: path library is a built in NodeJS library to deal with file systems paths operations and dealing with it is more recommended than using RegEx.
 
-## 3.Running the code :fire: :bug:
+## 3.Running the code 
 First, make sure you are on the root directory of the project via terminal and open two instances of terminals one for the client and second for the server-side of the project:
 To run the server 
 ```sh
