@@ -170,7 +170,7 @@ class BlogPostTemplate extends React.Component {
                 <div>
                   {post.frontmatter.tags
                     ? post.frontmatter.tags.split(' ').map((tag, index) => {
-                        return <TagComonenent index tag />;
+                        return <TagComonenent index={index} tag={tag} />;
                       })
                     : null}
                 </div>
