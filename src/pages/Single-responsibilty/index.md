@@ -2,6 +2,7 @@
 title: the SRP principle
 date: '2019-03-04'
 spoiler: Why many developers missunderstand the SRP principle
+spoiler: SRP SOLID Priciplal_Learning Coding
 ---
 
 Of all the SOLID principles, the Single Responsibility Principle (SRP) would be the least well understood. That’s likely because it has a particularly inappropriate name. It is too easy for programmers to hear the name and then assume that it means that every module should do just one thing.
