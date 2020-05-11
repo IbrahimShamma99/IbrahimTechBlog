@@ -29,6 +29,7 @@ const Tag = styled.span`
   border-radius: 4px;
   font-size: 13px;
   font-weight: bolder;
+  font-family: Helvetica, Arial, sans-serif;
   padding: 2px 5px 3px;
   border-radius: 2px;
   background: ${props => props.theme.main};
@@ -50,6 +51,11 @@ const indieTheme = {
 
 const brightTheme = {
   main: '#32CD32',
+  secondary: '#000000',
+};
+
+const reactTheme = {
+  main: '#00ffff',
   secondary: '#000000',
 };
 
@@ -206,6 +212,10 @@ class BlogPostTemplate extends React.Component {
                         } else if (index === 2) {
                           return (
                             <Tag theme={brightTheme}>{tag.concat(` `)} </Tag>
+                          );
+                        } else if (index === 3) {
+                          return (
+                            <Tag theme={reactTheme}>{tag.concat(` `)} </Tag>
                           );
                         } else {
                           return <Tag> {tag.concat(` `)}</Tag>;
