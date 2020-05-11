@@ -16,7 +16,7 @@ This is when the same input that gives the same output always in some way it is 
 
 ### Function composition
 This is when the process of combining two or more functions in order to produce a new function or perform some computation. For example, composition f . g (the dot means “composed with”) is equivalent to f(g(x)) in JavaScript.This is really useful when applying the dependency inversion principle. Better check this article out!
-{% post https://dev.to/ibrahimshamma99/what-is-dependency-inversion-54b9 %}
+<a href="/Depedency-Inversion/">The dependency inversion principle </a>  
 
 ### Shared State
 Meanwhile, This is any variable, object, or memory space that exists in a shared scope, can be delivered to any function as a parameter as the property of an object being passed between scopes. A shared scope can include global scope or closure scopes. Often, in object-oriented programming, objects are shared between scopes by adding properties to other objects.

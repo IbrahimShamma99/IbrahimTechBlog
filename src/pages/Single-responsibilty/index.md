@@ -5,8 +5,8 @@ spoiler: Why many developers missunderstand the SRP principle
 ---
 
 Of all the SOLID principles, the Single Responsibility Principle (SRP) would be the least well understood. That’s likely because it has a particularly inappropriate name. It is too easy for programmers to hear the name and then assume that it means that every module should do just one thing.
-I discussed all the SOLID principles here, you can check it out!
-{% link https://dev.to/ibrahimshamma99/the-solid-principles-in-designing-software-476c %}
+I discussed all the SOLID principles here, you can check it out!<br>
+<a href="/SOLID-Principles/">The-solid-principles-in-designing-software </a>  
 After finding the suitable definition from the Design Patterns: Elements of Reusable Object-Oriented Software aka (The gang of four) which is:
 #### A module should have one, and only one reason to change.
 ##### Let's have an example 
