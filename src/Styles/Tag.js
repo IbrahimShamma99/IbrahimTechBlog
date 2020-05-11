@@ -36,6 +36,11 @@ const reactTheme = {
   secondary: '#000000',
 };
 
+const flameTheme = {
+  main: '#ff0200',
+  secondary: '#000000',
+};
+
 const TagComponent = props => {
   console.log('props=', props);
   switch (props.index) {
@@ -47,6 +52,8 @@ const TagComponent = props => {
       return <Tag theme={brightTheme}>{props.tag.concat(` `)} </Tag>;
     case 3:
       return <Tag theme={reactTheme}>{props.tag.concat(` `)} </Tag>;
+    case 4:
+      return <Tag theme={flameTheme}>{props.tag.concat(` `)} </Tag>;
     default:
       return <Tag> {props.tag.concat(` `)}</Tag>;
   }

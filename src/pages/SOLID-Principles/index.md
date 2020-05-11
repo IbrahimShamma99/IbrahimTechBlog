@@ -1,6 +1,8 @@
 ---
 title: The "SOLID" Principles in designing software
 date: '2019-08-12'
+spoiler: brief introduction to the SOLID principles in programming
+tags: "SOLID JS Priciplal_Learning Coding"
 ---
 As with everything in life, using these principles mindlessly
 can cause more harm than good. The cost of applying these
