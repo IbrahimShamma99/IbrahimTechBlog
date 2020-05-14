@@ -138,7 +138,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-ebook`,
       options: {
-        filename: 'overreacted-ebook.epub',
+        filename: 'IbrahimPerBlog-ebook.epub',
         query: `
           {
             site {
@@ -170,8 +170,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Overreacted`,
-        short_name: `Overreacted`,
+        name: `IbrahimPerBlog`,
+        short_name: `IbrahimPerBlog`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#ffa7c4`,

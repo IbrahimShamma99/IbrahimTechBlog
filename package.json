@@ -3,10 +3,7 @@
   "private": true,
   "description": "Overreacted",
   "version": "1.0.0",
-  "author": "Dan Abramov <dan.abramov@me.com>",
-  "bugs": {
-    "url": "https://github.com/gaearon/overreacted.io/issues"
-  },
+  "author": "ibrahim <i.abushammah@gmail.com>",
   "dependencies": {
     "gatsby": "^2.0.76",
     "gatsby-plugin-catch-links": "^2.0.9",
