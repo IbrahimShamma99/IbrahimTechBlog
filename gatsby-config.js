@@ -3,7 +3,7 @@ module.exports = {
     title: 'Ibrahim personal blog',
     author: 'Ibrahim',
     description: 'Personal blog by Ibrahim.',
-    siteUrl: 'https://ibrahim-blog.iabushammah.now.sh/',
+    siteUrl: 'Ibrahim https://Kitabat.iabushammah.now.sh/',
     social: {
       twitter: 'ibrahimbon5',
     },
@@ -129,8 +129,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title:
-              'Ibrahim https://ibrahim-blog.iabushammah.now.sh/ Blog RSS Feed',
+            title: 'Ibrahim https://Kitabat.iabushammah.now.sh/ Blog RSS Feed',
           },
         ],
       },
