@@ -3,7 +3,7 @@ module.exports = {
     title: 'Ibrahim personal blog',
     author: 'Ibrahim',
     description: 'Personal blog by Ibrahim.',
-    siteUrl: 'Ibrahim https://Kitabat.iabushammah.now.sh/',
+    siteUrl: 'https://ibrahim-blog.iabushammah.now.sh/',
     social: {
       twitter: 'ibrahimbon5',
     },
@@ -129,7 +129,8 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: 'Ibrahim https://Kitabat.iabushammah.now.sh/ Blog RSS Feed',
+            title:
+              'Ibrahim https://ibrahim-blog.iabushammah.now.sh/ Blog RSS Feed',
           },
         ],
       },
@@ -137,7 +138,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-ebook`,
       options: {
-        filename: 'IbrahimPerBlog-ebook.epub',
+        filename: 'overreacted-ebook.epub',
         query: `
           {
             site {
@@ -169,8 +170,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `IbrahimPerBlog`,
-        short_name: `IbrahimPerBlog`,
+        name: `Overreacted`,
+        short_name: `Overreacted`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#ffa7c4`,
