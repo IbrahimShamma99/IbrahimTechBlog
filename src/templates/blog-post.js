@@ -148,6 +148,7 @@ class BlogPostTemplate extends React.Component {
           lang={lang}
           title={post.frontmatter.title}
           description={post.frontmatter.spoiler}
+          tags={post.frontmatter.spoiler}
           slug={post.fields.slug}
         />
         <main>

@@ -1,9 +1,71 @@
-c---
-title: مكتبتي 
-date: '2020-05-20'
+---
+title: مكتبتي*
+date: '2020-05-25'
 spoiler: 
 tags: "Books"
 ---
+
+# محتوى غير جاهز
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
 
 # Tech mindset<br>
 Clean code <br>
