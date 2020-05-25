@@ -27,13 +27,13 @@ class BlogIndexTemplate extends React.Component {
         <main>
           {langKey !== 'en' && langKey !== 'ru' && (
             <Panel>
-              These articles have been{' '}
+              Currently looking for translators{' '}
               <a
-                href="https://github.com/gaearon/overreacted.io#contributing-translations"
+                href="mailto:i.abushammah@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                translated by the community
+                if you are intrested contact me at i.abushammah@gmail.com
               </a>
               .
             </Panel>
