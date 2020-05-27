@@ -27,15 +27,14 @@ class BlogIndexTemplate extends React.Component {
         <main>
           {langKey !== 'en' && langKey !== 'ru' && (
             <Panel>
-              Currently looking for translators{' '}
               <a
                 href="mailto:i.abushammah@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                if you are intrested contact me at i.abushammah@gmail.com
+                i.abushammah@gmail.com
               </a>
-              .
+              اذا اعجبتك مقالاتي بتقدر تتواصل معي لأبداء رأيك او اي شي بدك اياه
             </Panel>
           )}
 
