@@ -45,13 +45,6 @@ class Translations extends React.Component {
                     <Link to={languageLink('en')}>English</Link>
                   )}
                   {' • '}
-                  {'ru' === lang ? (
-                    <b>Русский (авторский перевод)</b>
-                  ) : (
-                    <Link to={languageLink('ru')}>
-                      Русский (авторский перевод)
-                    </Link>
-                  )}
                   <br />
                   <br />
                 </span>
@@ -69,7 +62,7 @@ class Translations extends React.Component {
               ))}
             </span>
           )}
-          {lang !== 'en' && (
+          {lang == 'en' && (
             <div>
               <br />
               <br />
@@ -138,9 +131,6 @@ class BlogPostTemplate extends React.Component {
       1,
       enSlug.length - 1
     )}/index${lang === 'en' ? '' : '.' + lang}.md`;
-    const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(
-      `https://overreacted.io${enSlug}`
-    )}`;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>

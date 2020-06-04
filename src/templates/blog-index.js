@@ -10,6 +10,31 @@ import SEO from '../components/SEO';
 import get from 'lodash/get';
 import { rhythm } from '../utils/typography';
 import TagComonenent from '../Styles/Tag';
+import styled from 'styled-components';
+
+const Button = styled.span`
+  display: inline-block;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bolder;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 2px 5px 3px;
+  border-radius: 4px;
+  background: ${props => props.theme.main};
+  color: ${props => props.theme.secondary};
+  margin-bottom: 6px;
+  height: 30px;
+`;
+Button.defaultProps = {
+  theme: {
+    main: '#FFA7C4',
+    secondary: '#000000',
+  },
+};
+const indieTheme = {
+  main: '#ff0200',
+  secondary: '#000000',
+};
 
 class BlogIndexTemplate extends React.Component {
   render() {
@@ -23,9 +48,18 @@ class BlogIndexTemplate extends React.Component {
         <SEO />
         <aside>
           <Bio />
+          {langKey === 'en' ? (
+            <a href="/ar">
+              <Button theme={indieTheme}> المقالات العربية➜</Button>
+            </a>
+          ) : (
+            <a href="/">
+              <Button>Go back english⬅</Button>
+            </a>
+          )}
         </aside>
         <main>
-          {langKey !== 'en' && langKey !== 'ru' && (
+          {langKey !== 'en' && (
             <Panel>
               <a
                 href="mailto:i.abushammah@gmail.com"

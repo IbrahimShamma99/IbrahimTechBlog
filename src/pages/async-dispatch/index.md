@@ -5,8 +5,6 @@ spoiler: async-dispatch middleware
 tags: "React Redux Javascript"
 ---
 
-[![npm](https://img.shields.io/npm/v/async-dispatch.svg?maxAge=2592000?style=plastic)](https://www.npmjs.com/package/async-dispatch)
-
 > async-dispatch is a middleware can be added with no time to privilage the asynchronous into your store
 
 For more informatiom about the future of redux-logger, check out the [discussion here](https://github.com/IbrahimShamma99/asynDispatch-middleware/issues).
