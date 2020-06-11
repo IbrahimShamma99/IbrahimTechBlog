@@ -232,6 +232,18 @@ To run the client
 ```sh
 npm start
 ```
+
+## 4.Dealing with exporting files to the client side
+
+you need to make the files Directory public just by exporting it as a static asset using Express
+
+```jsx
+const path = require("path");
+app.use(express.static(path.join(__dirname, "./public/")));
+```
+
+
+
 # Conclusion 
 We discussed simple details in terms of MERN stack development note that you may get a CORS permission error and that happens because the client fetches data from different origin API and fixing it from your browser by allowing all origins of APIs and it has an extension on chrome to handle it properly.
 Happy coding.
